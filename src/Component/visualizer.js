@@ -20,6 +20,7 @@ import {
   DONE,
 } from "./Middleware/constants";
 import pause from "./Middleware/pause";
+import Footer from "./footer";
 
 /**
  * @author
@@ -199,6 +200,7 @@ const Visualizer = (props) => {
         newList={generateRandomArray}
       />
       <Frame list={list} />
+      <Footer />
     </div>
   );
 };

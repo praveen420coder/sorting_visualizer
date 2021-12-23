@@ -1,0 +1,85 @@
+.navbar {
+  top: 0;
+  overflow: hidden;
+  font-size: 16px;
+  min-height: 100px;
+  text-align: center;
+  background-color: #406882;
+  color: #fff;
+}
+.options {
+  margin: 10px;
+  text-align: center;
+}
+.btn {
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 14px;
+  background: #392a4a;
+  padding: 5px;
+  text-decoration: none;
+  width: 100px;
+}
+
+.btn:hover {
+  background: #e6f2fa;
+  background-image: -webkit-linear-gradient(top, #e6f2fa, #80acc9);
+  background-image: -moz-linear-gradient(top, #e6f2fa, #80acc9);
+  background-image: -ms-linear-gradient(top, #e6f2fa, #80acc9);
+  background-image: -o-linear-gradient(top, #e6f2fa, #80acc9);
+  background-image: linear-gradient(to bottom, #e6f2fa, #80acc9);
+  text-decoration: none;
+}
+.navbar #menu {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 150px;
+  height: 25px;
+  outline: none;
+}
+#random {
+  margin-top: 5px;
+}
+.navbar a {
+  outline: none;
+  cursor: pointer;
+  color: #ccd6f6;
+  padding: 13px 13px;
+  text-decoration: none;
+}
+.navbar > a:hover {
+  color: #64ffda;
+}
+.navbar > .icon {
+  display: none;
+}
+
+.array {
+  padding: 1rem;
+  display: flex;
+  min-height: 80vh;
+  align-items: flex-start;
+}
+.cell {
+  flex: 0.5;
+  margin: 1px;
+  display: flex;
+  resize: horizontal;
+  position: relative;
+  align-items: flex-start;
+  background-color: #d6d6d6;
+  transition: all 0.4s ease-in;
+}
+.cell.done {
+  background-color: #9cec5b;
+  border-color: #9cec5b;
+  transition: all 0.4s ease-out;
+}
+.cell.current {
+  border-color: #6184d8;
+  background-color: #6184d8;
+  transition: all 0.4s ease-out;
+}
